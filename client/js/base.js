@@ -1,4 +1,22 @@
-function MyController($scope, $http) {
+'use strict';
+
+// Declare app level module which depends on views, and components
+angular.module('app', [
+        'ngRoute'
+    ])
+
+    .config(['$routeProvider', function($routeProvider) {
+        console.log('test');
+
+        $routeProvider.when('/game', {
+            templateUrl: 'templates/game.html',
+            controller: 'MyController'
+        })
+        .otherwise({redirectTo: '/game'})
+
+    }])
+
+    .controller('MyController', function($scope, $http) {
 
     $scope.Scene = [];
     $scope.color = '';
@@ -29,4 +47,4 @@ function MyController($scope, $http) {
             $scope.currentScene = $scope.Scene[sceneId]
         }
     };
-}
+});
