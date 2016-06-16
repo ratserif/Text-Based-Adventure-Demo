@@ -33,7 +33,7 @@ router.get('/api/v1/getData', function(request, response) {
                 transition: 1
             }, {
                 id: 1,
-                text: "My name is ... I've got work to do.",
+                text: "My name is ___ I've got work to do.",
                 transition: 2
             }, {
                 id: 2,
@@ -62,7 +62,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 2,
-            description: "Excuse me, …? There’s something ominous going on and you’re more concerned on working? That’s a little unconventional. But let’s go, there could be something around us right now. Something lurking for us. Are you going to let it happen?",
+            description: "Excuse me, ___ ? There’s something ominous going on and you’re more concerned on working? That’s a little unconventional. But let’s go, there could be something around us right now. Something lurking for us. Are you going to let it happen?",
             choices: [{
                 id: 0,
                 text: "There’s something lurking? What am I doing here then?! Let’s go!",
