@@ -128,7 +128,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 10,
         description: "Please. Just give me a second chance. I can give them a story that they'll remember. Please, don't fire me.",
         choices: [
-            {id: 0, text: "...", transition: 11}
+            {id: 0, text: "[Continue]", transition: 11}
             ]
     },
     
@@ -136,7 +136,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 11,
         description: "*Howdy!* *My name is DOG.* *It has come to our attention that your narrator is no longer suitable for storytelling.* *Many factors include old age, illness, or, most likely... terrible people.* *You've chosen this path, and we've had to get rid of one of our narrators.* *No more choices.* *No more story.* *Only one consequence.*",
         choices: [
-            {id: 0, text: "...", transition: 0}
+            {id: 0, text: "[Continue]", transition: 0}
             ]
     },
     
@@ -225,7 +225,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 21,
         description: "I don't know, but I do know that that blue door in front of you will take you to the breakroom eventually. Don't go through the red door. Don't even think about the red door. Don't think about not thinking about that red door.",
         choices: [
-            {id: 0, text: "*I go through the blue door.", transition: 22},
+            {id: 0, text: "*I go through the blue door.*", transition: 22},
             {id: 1, text: "*I go through the red door.*", transition: 23}
             ]
     },
@@ -235,7 +235,7 @@ router.get('/api/v1/getData', function(request, response) {
         description: "Good and there's an elevator going upwards. Good choice, go up.",
         choices: [
             {id: 0, text: "*I go up with the elevator.*", transition: 25},
-            {id: 1, text: "*I go back.", transition: 23}
+            {id: 1, text: "*I go back.*", transition: 23}
             ]
     },
     
@@ -243,8 +243,8 @@ router.get('/api/v1/getData', function(request, response) {
         id: 23,
         description: "Why would you do that? Do you suddenly stop trusting me? When I tell you to do something. I would highly recommend doing that. So go through the blue door. I've shrunk the red door just in case you get curious with me.",
         choices: [
-            {id: 0, text: "*I go through the blue door.", transition: 22},
-            {id: 1, text: "*I crawl through the red door.", transition: 24}
+            {id: 0, text: "*I go through the blue door.*", transition: 22},
+            {id: 1, text: "*I crawl through the red door.*", transition: 24}
             ]
     },
     
@@ -315,7 +315,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 31,
         description: "There's no going back. There's no heroes here. There's no happy ending. Through this experience, the freedom of choice was all an illusion, a decision between either going left or going right. There was nothing you could have done to escape whether if you did choose to follow the line, help your coworkers, or pick the potted plant. This was simply a web that you walked into and got stuck. No worries, your life may be meaningless here, but your death will feed me. Thank you for your sacrifice, you won't feel, won't tire, won't fear, won't understand a thing.",
         choices: [
-            {id: 0, text: "", transition: 40}
+            {id: 0, text: "Retry?", transition: 0}
             ]
     },
     
@@ -323,7 +323,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 32,
         description: "What are you going to do with that potted plant? Boom. Now there's confetti everywhere. This will make your death a lot less mournful when I consume your flesh and devour your soul.",
         choices: [
-            {id: 0, text: "", transition: 31}
+            {id: 0, text: "[Continue]", transition: 31}
             ]
     },
     
@@ -347,8 +347,14 @@ router.get('/api/v1/getData', function(request, response) {
     
     {
         id: 35,
-        description: "*You suddenly gain your vision again.* *Beside you, the narrator is dead.* *The fall definitely killed it, but you seemingly are unscathed.* *Thud.* *The building fell where it arose from.* *Good job.* *You've chosen all the right options.* *Thank you for playing.*"
+        description: "*You suddenly gain your vision again.* *Beside you, the narrator is dead.* *The fall definitely killed it, but you seemingly are unscathed.* *Thud.* *The building fell where it arose from.* *Good job.* *You've chosen all the right options.* *Thank you for playing.*",
+        choices: [
+            {id: 0, text: "Retry?", transition: 0}
+            ]
     }
+//You're done.
+//There's no more you can do.
+//Good job.
 ];
 response.send(Scene);
 });
