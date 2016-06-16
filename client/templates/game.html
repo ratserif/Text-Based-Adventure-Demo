@@ -1,5 +1,6 @@
+<div class= "container" >
 <div class="page-header">
-    <h1>Trevor's Game</h1>
+    <h1>Testing Game Demo</h1>
 </div>
 
 <div class="row">
@@ -11,7 +12,7 @@
     </div>
 </div>
 <div class="spacer"></div>
-<div class="row">
+<div class="row" ng-hide="!currentScene">
      <div class="col-sm-12 col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">{{ currentScene.description }}</div>
@@ -25,4 +26,5 @@
           </div>
        </div>
     </div>
+</div>
 </div>

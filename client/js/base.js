@@ -42,9 +42,9 @@ angular.module('app', [
 
     $scope.selectChoice = function(answerid) {
         console.log('answerScene: ' + answerid);
-        if ($scope.currentScene.choices[answerid].transition) {
+        //if ($scope.currentScene.choices[answerid].transition) {
             sceneId = $scope.currentScene.choices[answerid].transition;
             $scope.currentScene = $scope.Scene[sceneId]
-        }
+       // }
     };
 });

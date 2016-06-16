@@ -70,7 +70,7 @@ router.get('/api/v1/getData', function(request, response) {
         description: "What? Look, there’s probably a reason for everything that is happening. You’re way too active and energetic for this. Calm down, and take deep breathes. Please, if you calm down, this would go a lot more smoothly. They’ve probably gone to the break room, just calm down first.",
         choices: [
             {id: 0, text: "I AM CALM!", transition: 10},
-            {id: 1, text: "Sorry. I go to the break room.", transition: 14},
+            {id: 1, text: "Sorry. I go to the break room.", transition: 5},
             {id: 2, text: "Okay. That is enough for me.", transition: 6}
             ]
     },
@@ -79,8 +79,8 @@ router.get('/api/v1/getData', function(request, response) {
         id: 5,
         description: "You come up across a yellow line that chaotically leads to the breakroom. I would tell you to follow that line, but it runs in swurves on the floor, the wall, the ceiling through twists and turns. It’s kinda interesting, but the line goes over a gaping gap, at least two meters.",
         choices: [
-            {id: 0, text: "I jump the gap to continue following the line.", transition: 16},
-            {id: 1, text: "I climb down, maybe there’s another way around it down there.", transition: 17},
+            {id: 0, text: "I jump the gap to continue following the line.", transition: 20},
+            {id: 1, text: "I climb down, maybe there’s another way around it down there.", transition: 20},
             {id: 2, text: "It’s game over, man. I can’t make it without jumping. It’s a lost cause.", transition: 6},
             ]
     },
@@ -136,7 +136,7 @@ router.get('/api/v1/getData', function(request, response) {
         id: 11,
         description: "*Howdy!* *My name is DOG.* *It has come to our attention that your narrator is no longer suitable for storytelling.* *Many factors include old age, illness, or, most likely... terrible people.* *You've chosen this path, and we've had to get rid of one of our narrators.* *No more choices.* *No more story.* *Only one consequence.*",
         choices: [
-            {id: 0, text: "", transition: 0}
+            {id: 0, text: "...", transition: 0}
             ]
     },
     
@@ -176,9 +176,181 @@ router.get('/api/v1/getData', function(request, response) {
             ]
     },
     
-   
+    {
+        id: 16,
+        description: "There's no sating your bloodlust is there? Here, let me deconstruct your world again. There. We're in a Geeblin Slayin' Sim. But you can't play, I'll play for you. Ha. Look. I killed the Astronomically Normal Churk. This game is so silly.",
+        choices: [
+            {id: 0, text: "*Watch the narrator slowly die.*", transition: 17},
+            {id: 1, text: "Boo. This game is boring.", transition: 17}
+            ]
+    },
+    
+    {
+        id: 17,
+        description: "Fine. If you're not having fun in this game, let's go for a more straight forward game. Let's try this Treasure Hunt. You chop down trees and try not to cut any monkeys but it's all random so we don't know if we'll get treasure or monkeys.",
+        choices: [
+            {id: 0, text: "*Cut trees.*", transition: 18},
+            {id: 1, text: "*Cut trees.*", transition: 19}
+            ]
+    },
+    
+    {
+        id: 18,
+        description: "You cut up a monkey, what's wrong with you? Well, it's completely randomly generated, so it's alright.",
+        choices: [
+            {id: 0, text: "*Cut trees.*", transition: 18},
+            {id: 1, text: "*Cut trees.*", transition: 19}
+            ]
+    },
+    
+    {
+        id: 19,
+        description: "Good job, you've got treasure and this game is boring me. It's too based on RNG to be considered to be an actual game. Now, I will make a hole in the ground to take you back to my story or you can stay here, that's your choice.",
+        choices: [
+            {id: 0, text: "*Jump through portal.*", transition: 0},
+            {id: 1, text: "*Stay*", transition: 19}
+            ]
+    },
+    
+    {
+        id: 20,
+        description: "Thud. That's the sound of your body hitting the ground. You are obviously at the bottom of this pit whether if you did jump or not. You've must have fell for a good five minutes, and the fact that you hit the ground and walk away without any injuries is astonishing. ",
+        choices:[
+            {id: 0, text: "How did I live? Where do I go now?", transition: 21},
+            {id: 1, text: "Did you know I was going to live when I fell?", transition: 21}
+            ]
+    },
+    
+    {
+        id: 21,
+        description: "I don't know, but I do know that that blue door in front of you will take you to the breakroom eventually. Don't go through the red door. Don't even think about the red door. Don't think about not thinking about that red door.",
+        choices: [
+            {id: 0, text: "*I go through the blue door.", transition: 22},
+            {id: 1, text: "*I go through the red door.*", transition: 23}
+            ]
+    },
+    
+    {
+        id: 22,
+        description: "Good and there's an elevator going upwards. Good choice, go up.",
+        choices: [
+            {id: 0, text: "*I go up with the elevator.*", transition: 25},
+            {id: 1, text: "*I go back.", transition: 23}
+            ]
+    },
+    
+    {
+        id: 23,
+        description: "Why would you do that? Do you suddenly stop trusting me? When I tell you to do something. I would highly recommend doing that. So go through the blue door. I've shrunk the red door just in case you get curious with me.",
+        choices: [
+            {id: 0, text: "*I go through the blue door.", transition: 22},
+            {id: 1, text: "*I crawl through the red door.", transition: 24}
+            ]
+    },
+    
+    {
+        id: 24,
+        description: "I teleported you back to the two doors, and now go through the blue door. The BLUE Door.",
+        choices: [
+            {id: 0, text: "Red? Loud and clear, boss.", transition: 13},
+            {id: 1, text: "*I go through the blue door.*", transition: 22},
+            ]
+    },
+        
+    {   
+        id: 25,
+        description: "The elevator goes up and the doors open to reveal that yellow line leading somewhere. It entered through a broken window, swurved onto the walls and ceilings. It is leading the way, but seriously, it looks like it destroyed everything in its path. Again, I would suggest for you to follow it, but it's straight up barbaric in its two-dimensional manner. Just go straight in the hallway.",
+        choices: [
+            {id: 0, text: "That line compells me to follow it. *Follow line.*", transition: 26},
+            {id: 1, text: "*Go straight through the hallway.*", transition: 27}
+            ]
+    },
+    
+    {
+        id: 26,
+        description: "No. No. No. Don't follow that line. It leads to chaos beyond what you can imagine. Did you suddenly stop trusting me?",
+        choices: [
+            {id: 0, text: "*Continue that salvation...*", transition: 28},
+            {id: 1, text: "*Go back.*", transition: 25}
+            ]
+    },
+    
+    {
+        id: 27,
+        description: "Good. Wait. Wait. Stop by that window before you enter the breakroom. See that plant? That potted plant? That's going to be important later. Just remember it when things get interesting. But you are in front of the breakroom.",
+        choices: [
+            {id: 0, text: "*Go back, now.*", transition: 26},
+            {id: 1, text: "*Go into the breakroom.*", transition: 29}
+            ]
+    },
+    
+    {
+        id: 28,
+        description: "*The line ends in front of a window, in that view, there are people suspended against a wall in a comatose state.* *Something truly horrible has happened.* *A man in a black suit and tie seemingly materializes from the area around the finished line.* *This was a place where 'the narrator' has no powers.* *You know the truth.* *Follow that line again.* *The line continues to move freely forward through a hallway away from the now visible 'narrator'.*",
+        choices: [
+            {id: 0, text: "*Run.*", transition: 30},
+            {id: 1, text: "*Go back.*", transition: 31}
+            ]
+    },
+    
+    {
+        id: 29,
+        description: "You open the doors into the breakroom to find your beloved coworkers stuck against a wall in a comatose state. Bravo. I've lead you down into my trap and I will feast on you forever. You should now start feeling tired now. I've shut down all the doors so no escape for you for anyone else.",
+        choices: [
+            {id: 0, text: "*Accept Fate*", transition: 31},
+            {id: 1, text: "*Help coworkers break free from the wall.*", transition: 31},
+            {id: 2, text: "*Potted plant.*", transition: 32}
+            ]
+    },
+    
+    {
+        id: 30,
+        description: "*In a mad dash, you begin to follow the line as it moves under doors, crashes through windows, and spreads onto walls.* *That narrator behind you chases like a mad man, a monster.* *Flailing his arms, his intent is to kill you and feast on your essence of being alive.*",
+        choices:[
+            {id: 0, text: "*Follow that line, wherever it may lead.*", transition: 33}
+            ]
+    },
+    
+    {
+        id: 31,
+        description: "There's no going back. There's no heroes here. There's no happy ending. Through this experience, the freedom of choice was all an illusion, a decision between either going left or going right. There was nothing you could have done to escape whether if you did choose to follow the line, help your coworkers, or pick the potted plant. This was simply a web that you walked into and got stuck. No worries, your life may be meaningless here, but your death will feed me. Thank you for your sacrifice, you won't feel, won't tire, won't fear, won't understand a thing.",
+        choices: [
+            {id: 0, text: "", transition: 40}
+            ]
+    },
+    
+    {
+        id: 32,
+        description: "What are you going to do with that potted plant? Boom. Now there's confetti everywhere. This will make your death a lot less mournful when I consume your flesh and devour your soul.",
+        choices: [
+            {id: 0, text: "", transition: 31}
+            ]
+    },
+    
+    {
+        id: 33,
+        description: "*The line continues until it goes off of a flat cliff.* *It was as if this world was cut apart and you're in one half of the separated building.* *The line goes straight down the cliff.* *The narrator is coming up as you stop to ponder the situation.*",
+        choices: [
+            {id: 0, text: "*Jump.*", transition: 34},
+            {id: 1, text: "*Accept fate.*", transition: 31}
+            ]
+    },
+    
+    {
+        id: 34,
+        description: "*You're falling into nothingness.* *It's just a haze of white at this point.* *You look back and see that it was a strange event that something happened to the great office building.* *Something ripped that building in half and brought it up into the sky.* *The narrator monster leapt off the edge to catch you, spreading its arms, revealing sharp teeth like knives, and arming itself with claws like talons.* *Then just black.* *That's all you see.*",
+        choices: [
+            {id: 0, text: "AAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrrrrrggggggggggggggggggghhhhhhhhhhhhhhhhh!", transition: 35},
+            {id: 1, text: "Is there anyone there? I can't see.", transition: 35}
+            ]
+    },
+    
+    {
+        id: 35,
+        description: "*You suddenly gain your vision again.* *Beside you, the narrator is dead.* *The fall definitely killed it, but you seemingly are unscathed.* *Thud.* *The building fell where it arose from.* *Good job.* *You've chosen all the right options.* *Thank you for playing.*"
+    }
 ];
-    response.send(Scene);
+response.send(Scene);
 });
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
