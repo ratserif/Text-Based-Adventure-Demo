@@ -9,5 +9,5 @@ body {
 .clickable:hover {
     cursor: pointer;
     color: #000000;
-    background-color: #d2d2d2
+    background-color: #d2d2d2;
 }
