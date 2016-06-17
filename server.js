@@ -536,12 +536,13 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 35,
-            description: "*You suddenly gain your vision again.* *Beside you, the narrator is dead.* *The fall definitely killed it, but you seemingly are unscathed.* *Thud.* *The building fell where it arose from.* *Good job.* *You've chosen all the right options.* *Thank you for playing.*",
+            description: "*You suddenly gain your vision again.*",
             choices: [{
                 id: 0,
-                text: "Retry?",
-                transition: 0
-            }]
+                text: "*Look around?*",
+                transition: 38
+            },
+            {id: 1, text: "*Crawl around.*", transition: 39}]
         },
         
         {
@@ -560,6 +561,29 @@ router.get('/api/v1/getData', function(request, response) {
                 {id: 0, text: "*Buy more Russian spammers to get more kappas.*", transition: 37},
                 {id: 1, text: "*Don't do anything.*", transition: 17}
                 ]
+        },
+        
+        {
+            id: 38,
+            description: "*There's a dead body, all mangled up from the fall.* *It's pretty unrecognizable, but it was the narrator.* *With a blank face, long sleek hair, and odd body parts, it is most definitely not human.* *But something fell on your head, something soft.* *Dirt.* *It was dirt, you look up and see the building falling down into the Earth.",
+            choices: [
+                {id: 0, text: "*Make a mad dash.*", transition: 40},
+                {id: 1, text: "*Kick the dead body for ensurance.", transition: 40}]
+        },
+        
+        {
+            id: 40,
+            description: "*A large chunk of falling Earth fell and make a loud THUD.* *It made the ground tremble, and you made an incredible beeline out of the danger zone.* *It was intense but you survived.* *The building was back on the Earth, the narrator was dead, and you're alive.* *Good job, and thank you for playing.*",
+            choices: [
+                {id: 0, text: "Retry?", transition: 0}]
+        },
+        
+        {
+            id: 39,
+            description: "*You crawl over a lump on the ground and stuck your hand into something wet.* *Its texture was something of a soapy solution, and you notice that it was a great dark blue colour.* *It came from a pale and thin man.* *It was all mangled up and was definitely dead.* *A loud thud is heard from behind you.* *It was a falling piece of debris.*",
+            choices: [
+                {id: 0, text: "*Kick the body for ensurance that it's dead.*", transition: 40},
+                {id: 1, text: "*Run out.*", transition: 40}]
         }
         //You're done.
         //There's no more you can do.
