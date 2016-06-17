@@ -26,7 +26,7 @@ router.use(express.static(path.resolve(__dirname, 'client')));
 router.get('/api/v1/getData', function(request, response) {
     var Scene = [{
             id: 0,
-            description: "Welcome to Trevor’s Game. It really doesn’t look like much, mainly because it was hastily done in a week, but it has a lot of heart and soul.  Let’s begin. Read this in a cockney man’s accent, makes it better. Imagine a world with fantasy and magic. A realm where anything is possible such as dragons, unicorns, and free college education. Got that? Good. Because that’s not where you are, you were just fantasizing about somewhere else you could be. You’re a cubicle worker for something astonishingly boring. Today was like every other day, but something was different. You don’t know what it is, neither do I. But are you ready for an adventure, uhh… What’s your name?",
+            description: "Welcome to Trevor’s Game. It really doesn’t look like much, mainly because it was hastily done in a week, but it has a lot of heart and soul.  Let’s begin. Imagine a world with fantasy and magic. A realm where anything is possible such as dragons, unicorns, and free college education. Got that? Good. Because that’s not where you are, you were just fantasizing about somewhere else you could be. You’re a cubicle worker for something astonishingly boring. Today was like every other day, but something was different. You don’t know what it is, neither do I. But are you ready for an adventure, uhh… What’s your name?",
             choices: [{
                 id: 0,
                 text: "My name's not important, let's go!",
