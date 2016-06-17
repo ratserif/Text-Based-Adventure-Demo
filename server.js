@@ -80,7 +80,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 3,
-            description: "I’m the narrator. That strange, all knowing, enduring and handsome narrator. You can hear me just like anyone else can hear you. If there was anyone else here, I would talk to them instead of you. Welp, I spoiled the next scene, but surprise, no one else is here, you’re all alone in this cubicle at the far end of the row. How will you proceed?",
+            description: "I’m the narrator. That strange, all knowing, enduring and handsome narrator. You can hear me just like anyone else can hear you. If there was anyone else here, I would talk to them instead of you. Welp, I spoiled the next scene, but surprise, no one else is here, you’re all alone in this cubicle. How will you proceed?",
             choices: [{
                 id: 0,
                 text: "No one’s here? Great. I finally do whatever I want! Let’s burn everything.",
@@ -278,7 +278,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 16,
-            description: "There's no sating your bloodlust is there? Here, let me deconstruct your world again. There. We're in a Geeblin Slayin' Sim. But you can't play, I'll play for you. Ha. Look. I killed the Astronomically Normal Churk. This game is so silly.",
+            description: "There's no sating your bloodlust, is there? Here, let me deconstruct your world again. There. We're in a Geeblin Slayin' Sim. But you can't play, I'll play for you. Ha. Look. I killed the Astronomically Normal Churk. This game is so silly.",
             choices: [{
                 id: 0,
                 text: "*Watch the narrator slowly die.*",
@@ -547,9 +547,9 @@ router.get('/api/v1/getData', function(request, response) {
         
         {
             id: 36,
-            description: "Fine. Fine, fine. How about this game? You just click on that kappa face thing to get more kappa. Go on. Try it. It's like a clicker game, you click on something to gain something to buy some things to gain even more of that something. Got it?",
+            description: "Fine. Fine, fine. How about this game? You just click on that kappa face thing to get more kappas. Go on. Try it. It's like a clicker game, you click on something to gain something to buy some things to gain even more of that something. Got it?",
             choices: [
-                {id: 0, text: "*Click on the kappa face to get more kappa.*", transition: 37},
+                {id: 0, text: "*Click on the kappa face to get more kappas.*", transition: 37},
                 {id: 1, text: "*Do nothing.*", transition: 37}
             ]
         },
@@ -607,7 +607,7 @@ router.get('/api/v1/getData', function(request, response) {
         
         {
             id: 43,
-            description: "Surprise, surprise. I don't know diddly-squat about basketball. So, of course, I'm going to embarass myself.",
+            description: "Surprise, surprise. I only know diddly-squat about basketball. So, of course, I'm going to embarrass myself.",
             choices: [
                 {id: 0, text: "You're so boring.", transition: 17},
                 {id: 1, text: "Alright. Let's go, let's go.", transition: 17},
