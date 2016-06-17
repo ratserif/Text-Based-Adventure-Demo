@@ -559,7 +559,7 @@ router.get('/api/v1/getData', function(request, response) {
             description: "You've got tons of kappas, so now buy some Russian Spammers to help your kappa income. This game is pretty weird but oddly addicting. Right?",
             choices: [
                 {id: 0, text: "*Buy more Russian spammers to get more kappas.*", transition: 37},
-                {id: 1, text: "*Don't do anything.*", transition: 41}
+                {id: 1, text: "*Don't do anything.*", transition: 40}
                 ]
         },
         
@@ -567,46 +567,46 @@ router.get('/api/v1/getData', function(request, response) {
             id: 38,
             description: "*There's a dead body, all mangled up from the fall.* *It's pretty unrecognizable, but it was the narrator.* *With a blank face, long sleek hair, and odd body parts, it is most definitely not human.* *But something fell on your head, something soft.* *Dirt.* *It was dirt, you look up and see the building falling down into the Earth.",
             choices: [
-                {id: 0, text: "*Make a mad dash.*", transition: 40},
-                {id: 1, text: "*Kick the dead body to ensure it is dead.", transition: 40}]
+                {id: 0, text: "*Make a mad dash.*", transition: 39},
+                {id: 1, text: "*Kick the dead body to ensure it is dead.", transition: 39}]
         },
         
         {
-            id: 40,
+            id: 39,
             description: "*A large chunk of falling Earth fell and made a loud THUD.* *It made the ground tremble, and you made an incredible beeline out of the danger zone.* *It was intense but you survived.* *The building was back on the Earth, the narrator was dead, and you're alive.* *Good job, and thank you for playing.*",
             choices: [
                 {id: 0, text: "Retry?", transition: 0}]
         },
         
         {
-            id: 41,
+            id: 40,
             description: "How about this? We take a quiz to see where we should live? It can't be that bad, can it?",
             choices: [
-                {id: 0, text: "*Watch the narrator play the game.*", transition: 42},
-                {id: 1, text: "This is so boring. You're lame. You can't even come up with original ideas so you have to use random people's games.", transition: 42}
+                {id: 0, text: "*Watch the narrator play the game.*", transition: 41},
+                {id: 1, text: "This is so boring. You're lame. You can't even come up with original ideas so you have to use random people's games.", transition: 41}
+                ]
+        },
+        
+        {
+            id: 41,
+            description: "Okay. So I got the homeless final judgement. This is awkward for me but I can handle it. I can handle it... kinda. Why don't we move on to the next game.",
+            choices: [
+                {id: 0, text: "*Wait to move on.*", transition: 42},
+                {id: 1, text: "Ha, you deserved it.", transition: 42},
                 ]
         },
         
         {
             id: 42,
-            description: "Okay. So I got the homeless final judgement. This is awkward for me but I can handle it. I can handle it... kinda. Why don't we move on to the next game.",
+            description: "Another quiz type game. This one is about the NBA and how much I know about it. Let me play it for you... and I don't know any of these people. I do know the Golden State Warriors, but that's pretty much it.",
             choices: [
-                {id: 0, text: "*Wait to move on.*", transition: 43},
-                {id: 1, text: "Ha, you deserved it.", transition: 43},
+                {id: 0, text: "*Watch the narrator fail at answering the questions correctly.*", transition: 43},
+                {id: 1, text: "You don't know anything about basketball.", transition: 43}
                 ]
         },
         
         {
             id: 43,
-            description: "Another quiz type game. This one is about the NBA and how much I know about it. Let me play it for you... and I don't know any of these people. I do know the Golden State Warriors, but that's pretty much it.",
-            choies: [
-                {id: 0, text: "*Watch the narrator fail at answering the questions correctly.*", transition: 44},
-                {id: 1, text: "You don't know anything about basketball.", transition: 44}
-                ]
-        },
-        
-        {
-            id: 44,
             description: "Surprise, surprise. I don't know diddly-squat about basketball. So, of course, I'm going to embarass myself.",
             choices: [
                 {id: 0, text: "You're so boring.", transition: 17},
