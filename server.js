@@ -26,7 +26,7 @@ router.use(express.static(path.resolve(__dirname, 'client')));
 router.get('/api/v1/getData', function(request, response) {
     var Scene = [{
             id: 0,
-            description: "Welcome to Trevor’s Game. It really doesn’t look like much, mainly because it was hastily done in a week, but it has a lot of heart and soul.  Let’s begin. Read this in a cockney man’s accent, makes it better. Imagine a world with fantasy and magic. A realm that anything is possible such as dragons, unicorns, and free college education. Got that? Good. Because that’s not where you are, you were just fantasizing about somewhere else you could be. You’re a cubicle worker for something astonishingly boring. Today was like every other day, but something was different. You don’t know what it is, neither do I. But are you ready for an adventure, uhh… What’s your name?",
+            description: "Welcome to Trevor’s Game. It really doesn’t look like much, mainly because it was hastily done in a week, but it has a lot of heart and soul.  Let’s begin. Read this in a cockney man’s accent, makes it better. Imagine a world with fantasy and magic. A realm where anything is possible such as dragons, unicorns, and free college education. Got that? Good. Because that’s not where you are, you were just fantasizing about somewhere else you could be. You’re a cubicle worker for something astonishingly boring. Today was like every other day, but something was different. You don’t know what it is, neither do I. But are you ready for an adventure, uhh… What’s your name?",
             choices: [{
                 id: 0,
                 text: "My name's not important, let's go!",
@@ -44,7 +44,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 1,
-            description: "Okay. Hold your horses, we still don’t know where this is going. All we know is something is different, let’s look around. In your haste to search for adventure, you look around your cubicle, but there’s a disturbing lack of people. All of your co-workers have gone missing, it doesn’t look like they showed up for work at all.",
+            description: "Okay. Hold your horses, we still don’t know where this is going. All we know is something is different, let’s look around. In your haste to search for adventure, you look around your cubicle, but there’s a disturbing lack of people. All of your co-workers have gone missing and it doesn’t look like they showed up for work at all.",
             choices: [{
                 id: 0,
                 text: "It’s a sign. I know it. It always happens this way.",
@@ -62,7 +62,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 2,
-            description: "Excuse me, ___ ? There’s something ominous going on and you’re more concerned on working? That’s a little unconventional. But let’s go, there could be something around us right now. Something lurking for us. Are you going to let it happen?",
+            description: "Excuse me, ___ ? There’s something ominous going on and you’re more concerned with working? That’s a little unconventional. But let’s go, there could be something around us right now. Something lurking for us. Are you going to let it happen?",
             choices: [{
                 id: 0,
                 text: "There’s something lurking? What am I doing here then?! Let’s go!",
@@ -80,7 +80,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 3,
-            description: "I’m the narrator. That strange, all knowing, endurable and handsome narrator. You can hear me just like anyone else can hear you. If there was anyone else here, I would talk to them instead of you. Welp, I spoiled the next scene, but surprise, no one else is here, you’re all alone in this cubicle at the far end of the row. How will you proceed?",
+            description: "I’m the narrator. That strange, all knowing, enduring and handsome narrator. You can hear me just like anyone else can hear you. If there was anyone else here, I would talk to them instead of you. Welp, I spoiled the next scene, but surprise, no one else is here, you’re all alone in this cubicle at the far end of the row. How will you proceed?",
             choices: [{
                 id: 0,
                 text: "No one’s here? Great. I finally do whatever I want! Let’s burn everything.",
@@ -98,14 +98,14 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 4,
-            description: "What? Look, there’s probably a reason for everything that is happening. You’re way too active and energetic for this. Calm down, and take deep breathes. Please, if you calm down, this would go a lot more smoothly. They’ve probably gone to the break room, just calm down first.",
+            description: "What? Look, there’s probably a reason for everything that is happening. You’re way too active and energetic for this. Calm down, and take deep breaths. Please, if you calm down, this would go a lot more smoothly. They’ve probably gone to the break room, just calm down first.",
             choices: [{
                 id: 0,
                 text: "I AM CALM!",
                 transition: 10
             }, {
                 id: 1,
-                text: "Sorry. I go to the break room.",
+                text: "Sorry. I will go to the break room.",
                 transition: 5
             }, {
                 id: 2,
@@ -116,7 +116,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 5,
-            description: "You come up across a yellow line that chaotically leads to the breakroom. I would tell you to follow that line, but it runs in swurves on the floor, the wall, the ceiling through twists and turns. It’s kinda interesting, but the line goes over a gaping gap, at least two meters.",
+            description: "You come up across a yellow line that chaotically leads to the breakroom. I would tell you to follow that line, but it runs in swerves on the floor, the wall, the ceiling through twists and turns. It’s kinda interesting, but the line goes over a gaping gap, at least two meters.",
             choices: [{
                 id: 0,
                 text: "I jump the gap to continue following the line.",
@@ -134,10 +134,10 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 6,
-            description: "Really? Come on. You've got to be the least bit concerned on where all of your friends are. Your fellow coworkers that you've been working with for years. I don't know, maybe something will happened to you, your family, or worst of all, your dog. You do have a dog, right? Well, you get the idea. Something bad can happen to you for doing nothing.",
+            description: "Really? Come on. You've got to be the least bit concerned about where all of your friends are. Your fellow coworkers that you've been working with for years. I don't know, maybe something will happen to you, your family, or worst of all, your dog. You do have a dog, right? Well, you get the idea. Something bad can and will happen to you for doing nothing.",
             choices: [{
                 id: 0,
-                text: "You're right. I go investigate the mysterious mystery that's happening.",
+                text: "You're right. I will go investigate the mysterious mystery that's happening.",
                 transition: 5
             }, {
                 id: 1,
@@ -170,7 +170,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 8,
-            description: "Yes, there could be something lurking out there. Take this seriously. I know this is a game in all, but it's not fun unless you follow my directions blindly. This is a trust between you and me. Do you not trust me?",
+            description: "Yes, there could be something lurking out there. Take this seriously. I know this is a game and all, but it's not fun unless you follow my directions blindly. This is a trust between you and me. Do you not trust me?",
             choices: [{
                 id: 0,
                 text: "Yeah, I trust you, just lead the way. This is your game.",
@@ -222,7 +222,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 12,
-            description: "So I unleashed a little bit of some bottled up tensions. Let's not stray far from the story I wrote up for you. Come on, let's try to find your friends.",
+            description: "So I unleashed a little bit of bottled up tension. Let's not stray far from the story I wrote up for you. Come on, let's try to find your friends.",
             choices: [{
                 id: 0,
                 text: "Forget that! The world needs to burn and start again.",
@@ -239,7 +239,7 @@ router.get('/api/v1/getData', function(request, response) {
             description: "Okay, do you even want to go through my story? It's okay if you don't, I'll just find something to try to sate you.",
             choices: [{
                 id: 0,
-                text: "No. I just want something else than usual. It's mainly because you're a bad narrator.",
+                text: "No. I just want something else than the usual. It's mainly because you're a bad narrator.",
                 transition: 14
             }, {
                 id: 1,
@@ -292,7 +292,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 17,
-            description: "Fine. If you're not having fun in this game, let's go for a more straight forward game. Let's try this Treasure Hunt. You chop down trees and try not to cut any monkeys but it's all random so we don't know if we'll get treasure or monkeys.",
+            description: "Fine. If you're not having fun in this game, let's go for a more straight forward game. Let's try this Treasure Hunt. You chop down trees and try not to cut any orangutans but it's all random so we don't know if we'll get treasure or orangutans.",
             choices: [{
                 id: 0,
                 text: "*Cut trees.*",
@@ -306,7 +306,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 18,
-            description: "You cut up a monkey, what's wrong with you? Well, it's completely randomly generated, so it's alright.",
+            description: "You cut up an orangutan, what's wrong with you? Well, it's completely randomly generated, so it's alright.",
             choices: [{
                 id: 0,
                 text: "*Cut trees.*",
@@ -334,7 +334,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 20,
-            description: "Thud. That's the sound of your body hitting the ground. You are obviously at the bottom of this pit whether if you did jump or not. You've must have fell for a good five minutes, and the fact that you hit the ground and walk away without any injuries is astonishing. ",
+            description: "Thud. That's the sound of your body hitting the ground. You are obviously at the bottom of this pit whether if you did jump or not. You've must have fallen for a good five minutes, and the fact that you hit the ground and walked away without any injuries is astonishing. ",
             choices: [{
                 id: 0,
                 text: "How did I live? Where do I go now?",
@@ -362,7 +362,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 22,
-            description: "Good and there's an elevator going upwards. Good choice, go up.",
+            description: "Good, and there's an elevator going upwards. Good choice, go up.",
             choices: [{
                 id: 0,
                 text: "*I go up with the elevator.*",
@@ -376,7 +376,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 23,
-            description: "Why would you do that? Do you suddenly stop trusting me? When I tell you to do something. I would highly recommend doing that. So go through the blue door. I've shrunk the red door just in case you get curious with me.",
+            description: "Why would you do that? Do you suddenly stop trusting me? When I tell you to do something, I would highly recommend doing that. So go through the blue door. I've shrunk the red door, just in case you get curious with me.",
             choices: [{
                 id: 0,
                 text: "*I go through the blue door.*",
@@ -404,10 +404,10 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 25,
-            description: "The elevator goes up and the doors open to reveal that yellow line leading somewhere. It entered through a broken window, swurved onto the walls and ceilings. It is leading the way, but seriously, it looks like it destroyed everything in its path. Again, I would suggest for you to follow it, but it's straight up barbaric in its two-dimensional manner. Just go straight in the hallway.",
+            description: "The elevator goes up and the doors open to reveal that yellow line leading somewhere. It entered through a broken window, swerved onto the walls and ceilings. It is leading the way, but seriously, it looks like it destroyed everything in its path. Again, I would suggest for you to follow it, but it's straight up barbaric in its two-dimensional manner. Just go straight in the hallway.",
             choices: [{
                 id: 0,
-                text: "That line compells me to follow it. *Follow line.*",
+                text: "That line compels me to follow it. *Follow line.*",
                 transition: 26
             }, {
                 id: 1,
@@ -432,7 +432,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 27,
-            description: "Good. Wait. Wait. Stop by that window before you enter the breakroom. See that plant? That potted plant? That's going to be important later. Just remember it when things get interesting. But you are in front of the breakroom.",
+            description: "Good. Wait. Wait. Stop by that window before you enter the breakroom. See that plant? That potted plant? That's going to be important later. Just remember it when things get interesting. Now, you are in front of the breakroom.",
             choices: [{
                 id: 0,
                 text: "*Go back, now.*",
@@ -446,7 +446,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 28,
-            description: "*The line ends in front of a window, in that view, there are people suspended against a wall in a comatose state.* *Something truly horrible has happened.* *A man in a black suit and tie seemingly materializes from the area around the finished line.* *This was a place where 'the narrator' has no powers.* *You know the truth.* *Follow that line again.* *The line continues to move freely forward through a hallway away from the now visible 'narrator'.*",
+            description: "*The line ends in front of a window; in that view, there are people suspended against a wall in a comatose state.* *Something truly horrible has happened.* *A man in a black suit and tie seemingly materializes from the area around the finished line.* *This is a place where 'the narrator' has no powers.* *You know the truth.* *Follow that line again.* *The line continues to move freely forward through a hallway away from the now visible 'narrator'.*",
             choices: [{
                 id: 0,
                 text: "*Run.*",
@@ -460,7 +460,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 29,
-            description: "You open the doors into the breakroom to find your beloved coworkers stuck against a wall in a comatose state. Bravo. I've lead you down into my trap and I will feast on you forever. You should now start feeling tired now. I've shut down all the doors so no escape for you for anyone else.",
+            description: "You open the doors into the breakroom to find your beloved coworkers stuck against a wall in a comatose state. Bravo. I've led you down into my trap and I will feast on you forever. You should now start feeling tired. I've shut all the doors so no escape for you or anyone else.",
             choices: [{
                 id: 0,
                 text: "*Accept Fate*",
@@ -488,7 +488,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 31,
-            description: "There's no going back. There's no heroes here. There's no happy ending. Through this experience, the freedom of choice was all an illusion, a decision between either going left or going right. There was nothing you could have done to escape whether if you did choose to follow the line, help your coworkers, or pick the potted plant. This was simply a web that you walked into and got stuck. No worries, your life may be meaningless here, but your death will feed me. Thank you for your sacrifice, you won't feel, won't tire, won't fear, won't understand a thing.",
+            description: "There's no going back. There's no heroes here. There's no happy ending. Through this experience, the freedom of choice was all an illusion, a decision between either going left or going right. There was nothing you could have done to escape, whether you chose to follow the line, help your coworkers, or pick the potted plant. This was simply a web that you walked into and got stuck. No worries, your life may be meaningless here, but your death will feed me. Thank you for your sacrifice, you won't feel, won't tire, won't fear, won't understand a thing.",
             choices: [{
                 id: 0,
                 text: "Retry?",
@@ -498,7 +498,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 32,
-            description: "What are you going to do with that potted plant? Boom. Now there's confetti everywhere. This will make your death a lot less mournful when I consume your flesh and devour your soul.",
+            description: "What are you going to do with that potted plant? Boom. Now, there's confetti everywhere. This will make your death a lot less mournful when I consume your flesh and devour your soul.",
             choices: [{
                 id: 0,
                 text: "[Continue]",
@@ -522,7 +522,7 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 34,
-            description: "*You're falling into nothingness.* *It's just a haze of white at this point.* *You look back and see that it was a strange event that something happened to the great office building.* *Something ripped that building in half and brought it up into the sky.* *The narrator monster leapt off the edge to catch you, spreading its arms, revealing sharp teeth like knives, and arming itself with claws like talons.* *Then just black.* *That's all you see.*",
+            description: "*You're falling into nothingness.* *It's just a haze of white at this point.* *You look back and see that it was a strange event that something happened to the great office building.* *Something ripped that building in half and brought it up into the sky.* *The narrator monster leaps off the edge to catch you, spreading its arms, revealing sharp teeth like knives, and arming itself with claws like talons.* *Then just black.* *That's all you see.*",
             choices: [{
                 id: 0,
                 text: "AAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrrrrrggggggggggggggggggghhhhhhhhhhhhhhhhh!",
@@ -556,10 +556,10 @@ router.get('/api/v1/getData', function(request, response) {
         
         {
             id: 37,
-            description: "You got tons of kappas, so now buy some Russian Spammers to help your kappa income. This game is pretty weird but oddly addicting. Right?",
+            description: "You've got tons of kappas, so now buy some Russian Spammers to help your kappa income. This game is pretty weird but oddly addicting. Right?",
             choices: [
                 {id: 0, text: "*Buy more Russian spammers to get more kappas.*", transition: 37},
-                {id: 1, text: "*Don't do anything.*", transition: 17}
+                {id: 1, text: "*Don't do anything.*", transition: 41}
                 ]
         },
         
@@ -568,22 +568,50 @@ router.get('/api/v1/getData', function(request, response) {
             description: "*There's a dead body, all mangled up from the fall.* *It's pretty unrecognizable, but it was the narrator.* *With a blank face, long sleek hair, and odd body parts, it is most definitely not human.* *But something fell on your head, something soft.* *Dirt.* *It was dirt, you look up and see the building falling down into the Earth.",
             choices: [
                 {id: 0, text: "*Make a mad dash.*", transition: 40},
-                {id: 1, text: "*Kick the dead body for ensurance.", transition: 40}]
+                {id: 1, text: "*Kick the dead body to ensure it is dead.", transition: 40}]
         },
         
         {
             id: 40,
-            description: "*A large chunk of falling Earth fell and make a loud THUD.* *It made the ground tremble, and you made an incredible beeline out of the danger zone.* *It was intense but you survived.* *The building was back on the Earth, the narrator was dead, and you're alive.* *Good job, and thank you for playing.*",
+            description: "*A large chunk of falling Earth fell and made a loud THUD.* *It made the ground tremble, and you made an incredible beeline out of the danger zone.* *It was intense but you survived.* *The building was back on the Earth, the narrator was dead, and you're alive.* *Good job, and thank you for playing.*",
             choices: [
                 {id: 0, text: "Retry?", transition: 0}]
         },
         
         {
-            id: 39,
-            description: "*You crawl over a lump on the ground and stuck your hand into something wet.* *Its texture was something of a soapy solution, and you notice that it was a great dark blue colour.* *It came from a pale and thin man.* *It was all mangled up and was definitely dead.* *A loud thud is heard from behind you.* *It was a falling piece of debris.*",
+            id: 41,
+            description: "How about this? We take a quiz to see where we should live? It can't be that bad, can it?",
             choices: [
-                {id: 0, text: "*Kick the body for ensurance that it's dead.*", transition: 40},
-                {id: 1, text: "*Run out.*", transition: 40}]
+                {id: 0, text: "*Watch the narrator play the game.*", transition: 42},
+                {id: 1, text: "This is so boring. You're lame. You can't even come up with original ideas so you have to use random people's games.", transition: 42}
+                ]
+        },
+        
+        {
+            id: 42,
+            description: "Okay. So I got the homeless final judgement. This is awkward for me but I can handle it. I can handle it... kinda. Why don't we move on to the next game.",
+            choices: [
+                {id: 0, text: "*Wait to move on.*", transition: 43},
+                {id: 1, text: "Ha, you deserved it.", transition: 43},
+                ]
+        },
+        
+        {
+            id: 43,
+            description: "Another quiz type game. This one is about the NBA and how much I know about it. Let me play it for you... and I don't know any of these people. I do know the Golden State Warriors, but that's pretty much it.",
+            choies: [
+                {id: 0, text: "*Watch the narrator fail at answering the questions correctly.*", transition: 44},
+                {id: 1, text: "You don't know anything about basketball.", transition: 44}
+                ]
+        },
+        
+        {
+            id: 44,
+            description: "Surprise, surprise. I don't know diddly-squat about basketball. So, of course, I'm going to embarass myself.",
+            choices: [
+                {id: 0, text: "You're so boring.", transition: 17},
+                {id: 1, text: "Alright. Let's go, let's go.", transition: 17},
+                ]
         }
         //You're done.
         //There's no more you can do.
