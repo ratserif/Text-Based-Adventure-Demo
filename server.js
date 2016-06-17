@@ -282,11 +282,11 @@ router.get('/api/v1/getData', function(request, response) {
             choices: [{
                 id: 0,
                 text: "*Watch the narrator slowly die.*",
-                transition: 17
+                transition: 36
             }, {
                 id: 1,
                 text: "Boo. This game is boring.",
-                transition: 17
+                transition: 36
             }]
         },
 
@@ -542,6 +542,24 @@ router.get('/api/v1/getData', function(request, response) {
                 text: "Retry?",
                 transition: 0
             }]
+        },
+        
+        {
+            id: 36,
+            description: "Fine. Fine, fine. How about this game? You just click on that kappa face thing to get more kappa. Go on. Try it. It's like a clicker game, you click on something to gain something to buy some things to gain even more of that something. Got it?",
+            choices: [
+                {id: 0, text: "*Click on the kappa face to get more kappa.*", transition: 37},
+                {id: 1, text: "*Do nothing.*", transition: 37}
+            ]
+        },
+        
+        {
+            id: 37,
+            description: "You got tons of kappas, so now buy some Russian Spammers to help your kappa income. This game is pretty weird but oddly addicting. Right?",
+            choices: [
+                {id: 0, text: "*Buy more Russian spammers to get more kappas.*", transition: 37},
+                {id: 1, text: "*Don't do anything.*", transition: 17}
+                ]
         }
         //You're done.
         //There's no more you can do.
