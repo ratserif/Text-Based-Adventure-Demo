@@ -250,14 +250,14 @@ router.get('/api/v1/getData', function(request, response) {
 
         {
             id: 14,
-            description: "Okay. Sounds like we need a new story. Alright. I will tell you, I am what people believe to be God. I can control your reality. Allow me to strip you of the world that you knew and replace it with something else... There. Let's try this. Here's a contraption that moves this cardboard baby into a fire. There's a button in front of you that will move back the baby. Got it?",
+            description: "Okay. Sounds like we need a new story. Alright. I will tell you, I am what people believe to be God. I can control your reality. Allow me to strip you of the world that you knew and replace it with something else... There. Let's try this. Here's a contraption that moves this cardboard unicorn into a fire. There's a button in front of you that will move back the unicorn. Got it?",
             choices: [{
                 id: 0,
-                text: "Fine. *Save the baby to satisfy the narrator.*",
+                text: "Fine. *Save the unicorn to satisfy the narrator.*",
                 transition: 15
             }, {
                 id: 1,
-                text: "*Let the baby burn immediately.*",
+                text: "*Let the unicorn burn immediately.*",
                 transition: 16
             }]
         },
@@ -267,11 +267,11 @@ router.get('/api/v1/getData', function(request, response) {
             description: "This game is good, huh?",
             choices: [{
                 id: 0,
-                text: "*Save baby.*",
+                text: "*Save unicorn.*",
                 transition: 15
             }, {
                 id: 1,
-                text: "*Burn baby.*",
+                text: "*Burn unicorn.*",
                 transition: 16
             }]
         },
